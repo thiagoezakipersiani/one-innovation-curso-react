@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid #505050;
+            margin-bottom: 15px;
+            max-width: 350px;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            text-align: center;
+            background-color: teal;
+            color: whitesmoke;
+            font-size: 20px;
+            margin:5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item auto">AAAAA</div>
+        <div class="item auto">BBBB</div>
+        <div class="item auto">Não importa o que você decidiu. O que importa é que isso te faz feliz.</div>
+        <div class="item auto">A persistência é o caminho do êxito</div>
+    </div>
+
+    <div class="container">
+        <div class="item center">AAAAA</div>
+        <div class="item start">BBBB</div>
+        <div class="item stretch">Não importa o que você decidiu. O que importa é que isso te faz feliz.</div>
+        <div class="item end">A persistência é o caminho do êxito</div>
+    </div>
+
+    <h1>Column</h1>
+    <div class="container">
+        <div class="item auto column">AAAAA</div>
+        <div class="item auto column">BBBB</div>
+        <div class="item auto column">Não importa o que você decidiu. O que importa é que isso te faz feliz.</div>
+        <div class="item auto column">A persistência é o caminho do êxito</div>
+    </div>
+
+    <div class="container">
+        <div class="item center column">AAAAA</div>
+        <div class="item start column">BBBB</div>
+        <div class="item stretch column">Não importa o que você decidiu. O que importa é que isso te faz feliz.</div>
+        <div class="item end column">A persistência é o caminho do êxito</div>
+    </div>
+</body>
+</html>

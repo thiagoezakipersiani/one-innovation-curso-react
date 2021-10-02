@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border:1px solid #505050 ;
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .items{
+            background-color: darkblue;
+            color: whitesmoke;
+            margin: 5px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .s-1{
+            flex-shrink:2;
+        }
+
+        .s-1{
+            flex-shrink: 3;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Shrink 1</p>
+    <div class="container">
+        <div class="items s-1 fg-1">A</div>
+        <div class="items s-1 fg-1">B</div>
+        <div class="items s-1 fg-1">C</div>
+        <div class="items s-1 fg-1">D</div>
+        <div class="items s-1 fg-1">E</div>
+    </div>
+
+    <div class="container">
+        <div class="items s-1 fg-1">A</div>
+        <div class="items s-1 fg-1">TESTE DO ITEM B</div>
+        <div class="items s-1 fg-1">C</div>
+        <div class="items s-1 fg-1">D</div>
+    </div>    
+
+    <p>Shrink 0 / flex basis=100px</p>
+    <div class="container">
+        <div class="items s-0 fg-1">A</div>
+        <div class="items s-0 fg-1">TESTE DO ITEM B </div>
+        <div class="items s-0 fg-1">C</div>
+        <div class="items s-0 fg-1">D</div>
+        <div class="items s-0 fg-1">E</div>
+    </div>
+
+    <p>Shrink mix</p>
+    <div class="container">
+    <div class="items s-1 fg-1">A</div>
+    <div class="items s-2 fg-1">TESTE DO ITEM B</div>
+    <div class="items s-3 fg-1">TESTE DO ITEM C</div>
+    <div class="items s-0 fg-1">D</div>
+    </div>
+</body>
+</html>
