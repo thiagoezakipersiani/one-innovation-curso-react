@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display:flex;
+            flex-wrap: wrap;
+            border: 1px solid #505050;
+        }
+
+        .item{
+            background-color: teal;
+            color: whitesmoke;
+            padding:0 5px;
+            flex: 1;
+            text-align:center;
+            margin: 5px;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+        
+        .space-between{
+            align-content: space-between;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container">
+        <div class="item">hkajsksahskua  kuasaaska ssiajisa</div>
+        <div class="item">ashusk asahuas kuhas</div>
+        <div class="item">ashuska  sahuaskuha ssasakjsa</div>
+         <div class="item">TESTANDO TUDO KKKK  KKKK KKKKK  KKKKKKKK  KKKKklka   sjaissa  askuh jjasisajilaji aijlsjali</div>
+         <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">hkajsksahskua  kuasaaska ssiajisa</div>
+        <div class="item">ashusk asahuas kuhas</div>
+        <div class="item">ashuska  sahuaskuha ssasakjsa</div>
+         <div class="item">TESTANDO TUDO KKKK  KKKK KKKKK  KKKKKKKK  KKKKklka   sjaissa  askuh jjasisajilaji aijlsjali</div>
+         <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+    </div>
+
+    <p>Flex start</p>
+    <div class="container flex-start">
+        <div class="item">hkajsksahskua  kuasaaska ssiajisa</div>
+        <div class="item">ashusk asahuas kuhas</div>
+        <div class="item">ashuska  sahuaskuha ssasakjsa</div>
+         <div class="item">TESTANDO TUDO KKKK  KKKK KKKKK  KKKKKKKK  KKKKklka   sjaissa  askuh jjasisajilaji aijlsjali</div>
+         <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+    </div>
+
+    <p>Flex end</p>
+    <div class="container flex-end">
+        <div class="item">hkajsksahskuakuasaaskassiajisa</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">TESTANDO TUDO KKKK  KKKK KKKKK  KKKKKKKK  KKKKklka   sjaissa  askuh jjasisajilaji aijlsjali</div>
+        <div class="item">ashuskasahuaskuhassasakjsa</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+    </div>
+
+    <p>Space around</p>
+    <div class="container space-around">
+        <div class="item">hkajsksahskua  kuasaaska ssiajisa</div>
+        <div class="item">ashusk asahuas kuhas</div>
+        <div class="item">ashuska  sahuaskuha ssasakjsa</div>
+         <div class="item">TESTANDO TUDO KKKK  KKKK KKKKK  KKKKKKKK  KKKKklka   sjaissa  askuh jjasisajilaji aijlsjali</div>
+         <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+    </div>
+
+    <p>Space space-between</p>
+    <div class="container space-between">
+        <div class="item">hkajsksahskua  kuasaaska ssiajisa</div>
+        <div class="item">ashusk asahuas kuhas</div>
+        <div class="item">ashuska  sahuaskuha ssasakjsa</div>
+         <div class="item">TESTANDO TUDO KKKK  KKKK KKKKK  KKKKKKKK  KKKKklka   sjaissa  askuh jjasisajilaji aijlsjali</div>
+         <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+        <div class="item">ashuskasahuaskuhas</div>
+    </div>
+</body>
+</html>
